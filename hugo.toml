@@ -1,4 +1,4 @@
-baseURL = 'https://github.com/AnhThiNguyen2644/BlogLapTrinhProfile.git/'
+baseURL = 'https://AnhThiNguyen2644.github.io/BlogLapTrinhProfile/'
 languageCode = 'vi'
 title = '❉Anh Thi BLOG❉'
 theme = "PaperMod"
