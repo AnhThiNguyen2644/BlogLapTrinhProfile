@@ -3,10 +3,11 @@ title: "Xử lý bất đồng bộ với Async/Await trong JS"
 date: 2025-12-19
 draft: false
 cover:
-    image: "/bai7.webp"  # Đường dẫn ảnh trong thư mục static
-    alt: "Mô hình kết nối TCP" # Chữ hiện ra nếu ảnh lỗi
-    caption: "Mô hình Client-Server cơ bản" # Chú thích nhỏ dưới ảnh
+    image: "/BlogLapTrinhProfile/bai7.webp"  # Đường dẫn ảnh trong thư mục static
+    alt: "Mô hình xử lý bất đồng bộ" # Chữ hiện ra nếu ảnh lỗi
+    caption: "Mô hình xử lý bất đồng bộ đơn luồng" # Chú thích nhỏ dưới ảnh
     relative: false # Để false để dùng đường dẫn tuyệt đối từ static
+    tags: ["Async", "Await", "JS"]
 ---
 
 ### 1. Tại sao cần Async/Await?

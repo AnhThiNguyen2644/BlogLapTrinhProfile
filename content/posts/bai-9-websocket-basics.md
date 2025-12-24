@@ -3,10 +3,11 @@ title: "Giới thiệu về kết nối thời gian thực WebSocket"
 date: 2025-12-19
 draft: false
 cover:
-    image: "/bai9.webp"  # Đường dẫn ảnh trong thư mục static
-    alt: "Mô hình kết nối TCP" # Chữ hiện ra nếu ảnh lỗi
-    caption: "Mô hình Client-Server cơ bản" # Chú thích nhỏ dưới ảnh
+    image: "/BlogLapTrinhProfile/bai9.webp"  # Đường dẫn ảnh trong thư mục static
+    alt: "Mô hình kết nối thời gian thực WebSocket" # Chữ hiện ra nếu ảnh lỗi
+    caption: "Ảnh mô tả đường đi của kết nối thời gian thực WebSocket" # Chú thích nhỏ dưới ảnh
     relative: false # Để false để dùng đường dẫn tuyệt đối từ static
+    tags: ["Client", "Websocket", "Server"]
 ---
 
 ### 1. WebSocket vs HTTP

@@ -2,6 +2,7 @@
 title: "Lập trình truyền file qua Socket trong Java"
 date: 2025-12-19
 draft: false
+tags: ["Java", "Lập trình mạng", "Socket"]
 ---
 
 ### 1. Nguyên lý truyền file

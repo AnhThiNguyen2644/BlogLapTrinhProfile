@@ -3,10 +3,10 @@ title: "Xây dựng ứng dụng Chat đơn giản với Java"
 date: 2025-12-19
 draft: false
 cover:
-    image: "/bai5.jpg"  # Đường dẫn ảnh trong thư mục static
-    alt: "Mô hình kết nối TCP" # Chữ hiện ra nếu ảnh lỗi
-    caption: "Mô hình Client-Server cơ bản" # Chú thích nhỏ dưới ảnh
+    image: "/BlogLapTrinhProfile/bai5.jpg"  # Đường dẫn ảnh trong thư mục static
+    alt: "ẢNH MÔ TẢ" # Chữ hiện ra nếu ảnh lỗi
     relative: false # Để false để dùng đường dẫn tuyệt đối từ static
+    tags: ["Java", "Lập trình mạng", "ChatApp"]
 ---
 
 ### 1. Ý tưởng hệ thống Chat

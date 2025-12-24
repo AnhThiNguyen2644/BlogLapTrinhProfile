@@ -3,10 +3,11 @@ title: "Đóng gói và giải mã dữ liệu JSON"
 date: 2025-12-19
 draft: false
 cover:
-    image: "/anh8.png"  # Đường dẫn ảnh trong thư mục static
-    alt: "Mô hình kết nối TCP" # Chữ hiện ra nếu ảnh lỗi
-    caption: "Mô hình Client-Server cơ bản" # Chú thích nhỏ dưới ảnh
+    image: "/BlogLapTrinhProfile/anh8.png"  # Đường dẫn ảnh trong thư mục static
+    alt: "Mô hình đóng gói và giải mã json" # Chữ hiện ra nếu ảnh lỗi
+    caption: "Ảnh mô tả về đóng gói và giải mã dữ liệu của Json (A.I)" # Chú thích nhỏ dưới ảnh
     relative: false # Để false để dùng đường dẫn tuyệt đối từ static
+    tags: ["JSON", "Server", "Client"]
 ---
 
 ### 1. JSON là gì?
