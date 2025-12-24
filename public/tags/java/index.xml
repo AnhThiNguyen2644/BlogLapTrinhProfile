@@ -38,5 +38,24 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Trong thực tế, TCP được ví như một cuộc gọi điện &lt;span style=&#34;color:#a6e22e&#34;&gt;thoại&lt;/span&gt; (phải nhấc máy mới nói chuyện được), còn UDP như việc gửi &lt;span style=&#34;color:#a6e22e&#34;&gt;thư&lt;/span&gt; (cứ gửi đi mà không chắc người nhận có đọc được không). Khi lập trình, lỗi thường gặp nhất là &lt;span style=&#34;color:#a6e22e&#34;&gt;BindException&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; cổng Port đã bị ứng dụng khác chiếm dụng) hoặc &lt;span style=&#34;color:#a6e22e&#34;&gt;ConnectException&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; Server chưa chạy).
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
+    <item>
+      <title>Lập trình truyền file qua Socket trong Java</title>
+      <link>http://localhost:1313/BlogLapTrinhProfile/posts/bai-4-file-transfer-java/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/BlogLapTrinhProfile/posts/bai-4-file-transfer-java/</guid>
+      <description>&lt;h3 id=&#34;1-nguyên-lý-truyền-file&#34;&gt;1. Nguyên lý truyền file&lt;/h3&gt;
+&lt;p&gt;Để truyền file, chúng ta chuyển file thành mảng các byte (byte array), sau đó gửi mảng byte này qua luồng xuất (&lt;code&gt;OutputStream&lt;/code&gt;) của Socket.&lt;/p&gt;
+&lt;h3 id=&#34;2-code-ví-dụ-gửi-file-client&#34;&gt;2. Code ví dụ gửi file (Client)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FileInputStream fis &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; FileInputStream(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;anh_cua_toi.jpg&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;OutputStream os &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; socket.&lt;span style=&#34;color:#a6e22e&#34;&gt;getOutputStream&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; buffer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;4096&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; bytesRead;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; ((bytesRead &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; fis.&lt;span style=&#34;color:#a6e22e&#34;&gt;read&lt;/span&gt;(buffer)) &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;1) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    os.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(buffer, 0, bytesRead);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Gửi file thành công!&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
   </channel>
 </rss>

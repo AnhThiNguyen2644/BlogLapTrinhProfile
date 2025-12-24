@@ -142,7 +142,7 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
-        <img loading="lazy" src="http://localhost:1313/anh1.jpg" alt="Mô hình kết nối TCP">
+        <img loading="lazy" src="http://localhost:1313/BlogLapTrinhProfile/anh1.jpg" alt="Mô hình kết nối TCP">
 </figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent"> Lập trình Socket TCP cơ bản với Java
@@ -154,6 +154,19 @@ ServerSocket: Dùng cho phía Server để lắng nghe kết nối. Socket: Dùn
   </div>
   <footer class="entry-footer"><span title='2025-12-19 00:00:00 +0000 UTC'>December 19, 2025</span></footer>
   <a class="entry-link" aria-label="post link to  Lập trình Socket TCP cơ bản với Java" href="http://localhost:1313/BlogLapTrinhProfile/posts/bai-1-socket-tcp-java/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Lập trình truyền file qua Socket trong Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Nguyên lý truyền file Để truyền file, chúng ta chuyển file thành mảng các byte (byte array), sau đó gửi mảng byte này qua luồng xuất (OutputStream) của Socket.
+2. Code ví dụ gửi file (Client) FileInputStream fis = new FileInputStream(&#34;anh_cua_toi.jpg&#34;); OutputStream os = socket.getOutputStream(); byte[] buffer = new byte[4096]; int bytesRead; while ((bytesRead = fis.read(buffer)) != -1) { os.write(buffer, 0, bytesRead); } System.out.println(&#34;Gửi file thành công!&#34;); </p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-19 00:00:00 +0000 UTC'>December 19, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Lập trình truyền file qua Socket trong Java" href="http://localhost:1313/BlogLapTrinhProfile/posts/bai-4-file-transfer-java/"></a>
 </article>
     </main>
     
